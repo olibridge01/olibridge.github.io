@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'MCRegular';
+    src: url('mc-font/MCRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MCBold';
+    src: url('mc-font/MCBold.otf') format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MCRegular';
+    background-color: #f0f0f0;
+}
+
+#header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'MCRegular';
+}
+
+#links {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000;
+    position: absolute;
+}
+
+#central-div {
+    width: 80%;
+    padding: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    margin: 10px 0 5px;
+}
+
+.project p {
+    margin: 0;
+}
