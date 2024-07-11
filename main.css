@@ -8,10 +8,16 @@
     src: url('mc-font/MCBold.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'PixeloidSans';
+    src: url('mc-font/EightBitDragon-anqx.ttf') format('opentype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,20 +26,20 @@ body, html {
     background-color: #f0f0f0;
 }
 
-#header {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #name {
     font-size: 28px;
-    font-weight: bold;
-    font-family: 'MCRegular';
+    font-family: 'PixeloidSans';
+}
+
+#name a {
+    text-decoration: none;
+    color: #000;
+}
+
+#name:hover {
+    background: -webkit-linear-gradient(#ccac0c, #e19244);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #links {
@@ -46,23 +52,52 @@ body, html {
     height: 28px;
 }
 
-#content {
+.background {
+    background-color: #4285F4;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    border: 2px solid #000;
-    position: absolute;
 }
 
-#central-div {
-    width: 80%;
-    padding: 20px;
+.central-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 3px solid #000;
-    background-color: #fff;
+    /* padding: 10px; */
+    width: 50%;
+    max-width: 600px;
+    /* Add shadow */
+    box-shadow: 7px 7px 0 rgb(66, 76, 95);
+}
+
+.content {
+    width: 100%;
+    /* padding: 20px; */
+    /* border: 2px solid #000; */
+    background-color: #f0f0f0;
     text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid #000; */
+    /* padding: 10px; */
+}
+
+.header-border {
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(191, 191, 191, 0.1);
+}
+
+.info {
+    padding: 0px 20px 10px 20px;
 }
 
 .project {
@@ -75,4 +110,44 @@ body, html {
 
 .project p {
     margin: 0;
+}
+
+#scholar {
+    color: #4285F4;
+    font-size: 28px;
+}
+
+#scholar:hover {
+    color: #000;
+    rotate: 10deg;
+}
+
+#github {
+    color: #333;
+    font-size: 28px;
+}
+
+#github:hover {
+    color: #000;
+    rotate: 10deg;
+}
+
+#linkedin {
+    color: #0077B5;
+    font-size: 28px;
+}
+
+#linkedin:hover {
+    color: #000;
+    rotate: 10deg;
+}
+
+#email {
+    color: #f25252;
+    font-size: 28px;
+}
+
+#email:hover {
+    color: #000;
+    rotate: 10deg;
 }
