@@ -24,6 +24,11 @@ body, html {
     justify-content: center;
     font-family: 'MCRegular';
     background-color: #4285F4;
+    cursor: none;
+}
+
+a:hover {
+    cursor: none;
 }
 
 #name {
@@ -44,7 +49,7 @@ body, html {
 
 #links {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .icon {
@@ -67,13 +72,13 @@ body, html {
     flex-direction: column;
     justify-content: center;
     border: 3px solid #000;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     box-shadow: 7px 7px 0 rgb(66, 76, 95);
 }
 
 .central-div:hover {
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
 }
 
 .content {
@@ -113,6 +118,7 @@ body, html {
 
 .project h3 {
     margin: 10px 0 5px;
+    width: fit-content;
 }
 
 .project p {
@@ -165,6 +171,10 @@ body, html {
     -webkit-text-fill-color: transparent;
 }
 
+.info a {
+    display: inline-block;
+}
+
 .info a:hover {
     text-decoration: none;
 }
@@ -173,4 +183,47 @@ body, html {
     background: -webkit-linear-gradient(#ccac0c, #e19244);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.cursor {
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: #1e1e1e;
+    transition: all 0.2s ease;
+    transition-property: background, transform, width, height, border;
+}
+
+.cursor-big {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: rgba(191, 191, 191, 0.4);
+}
+
+.cursor-med {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: rgba(191, 191, 191, 0.4);
+}
+
+.cursor-none {
+    display: none;
+    background: none;
 }
