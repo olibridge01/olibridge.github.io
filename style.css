@@ -27,6 +27,11 @@ body, html {
     cursor: none;
 }
 
+a {
+    color: #0000EE;
+
+}
+
 a:hover {
     cursor: none;
 }
@@ -128,41 +133,49 @@ a:hover {
 #scholar {
     color: #4285F4;
     font-size: 24px;
+    transition: 0.2s ease;
 }
 
 #scholar:hover {
     color: #000;
-    rotate: 10deg;
+    rotate: 20deg;
+    transition: 0.2s ease;
 }
 
 #github {
     color: #333;
     font-size: 24px;
+    transition: 0.2s ease;
 }
 
 #github:hover {
     color: #000;
-    rotate: 10deg;
+    rotate: 30deg;
+    transition: 0.2s ease;
 }
 
 #linkedin {
     color: #0077B5;
     font-size: 24px;
+    transition: 0.2s ease;
 }
 
 #linkedin:hover {
     color: #000;
-    rotate: 10deg;
+    rotate: 20deg;
+    transition: 0.2s ease;
 }
 
 #email {
     color: #f25252;
     font-size: 24px;
+    transition: 0.2s ease;
 }
 
 #email:hover {
     color: #000;
-    rotate: 10deg;
+    rotate: 20deg;
+    transition: 0.2s ease;
 }
 
 .intro a:hover {
@@ -177,50 +190,50 @@ a:hover {
 
 .info a:hover {
     text-decoration: none;
-}
-
-.info h3:hover {
     background: -webkit-linear-gradient(#ccac0c, #e19244);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .cursor {
-    width: 0.8rem;
-    height: 0.8rem;
-    border: 2px solid black;
+    width: 0.75rem;
+    height: 0.75rem;
+    /* border: 2px solid black; */
     border-radius: 50%;
     position: absolute;
     z-index: 1;
     transform: translate(-50%, -50%);
     pointer-events: none;
     background: #1e1e1e;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
     transition-property: background, transform, width, height, border;
+    /* Set intiial position */
+    top: 0;
+    left: 0;
 }
 
 .cursor-big {
-    width: 3rem;
-    height: 3rem;
-    border: 2px solid black;
-    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    /* border: 2px solid black; */
+    border-radius: 30%;
     position: absolute;
     z-index: 1;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    background: rgba(191, 191, 191, 0.4);
+    background: rgba(191, 191, 191, 0.6);
 }
 
 .cursor-med {
     width: 2rem;
     height: 2rem;
-    border: 2px solid black;
-    border-radius: 50%;
+    /* border: 2px solid rgb(51, 51, 51); */
+    border-radius: 30%;
     position: absolute;
     z-index: 1;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    background: rgba(191, 191, 191, 0.4);
+    background: rgba(191, 191, 191, 0.6);
 }
 
 .cursor-none {

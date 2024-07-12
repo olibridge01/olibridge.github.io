@@ -40,3 +40,24 @@ content_links.forEach(link => {
         mourseCursor.classList.remove('cursor-med');
     });
 });
+
+// Make cursor invisible upon loading the page, and it only becomes visible when the mouse moves
+window.addEventListener('load', () => {
+    mourseCursor.style.opacity = 0;
+});
+
+window.addEventListener('mousemove', () => {
+    mourseCursor.style.opacity = 1;
+});
+
+// Make cursor disappear when mouse moves off the window
+window.addEventListener('mouseleave', () => {
+    mourseCursor.style.opacity = 0;
+});
+
+// Make cursor reappear when mouse moves back to the window
+
+window.addEventListener('mouseenter', () => {
+    mourseCursor.style.opacity = 1;
+}
+);
