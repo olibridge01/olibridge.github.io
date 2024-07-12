@@ -42,7 +42,7 @@ content_links.forEach(link => {
 
 // Make cursor invisible upon loading the page, and it only becomes visible when the mouse moves
 window.addEventListener('load', () => {
-    mourseCursor.style.opacity = 0;
+    mouseCursor.style.opacity = 0;
 });
 window.addEventListener('mousemove', () => {
     mouseCursor.style.opacity = 1;
