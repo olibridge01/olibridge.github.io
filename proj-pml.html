@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>olibridge</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="mc-font/MCRegular.otf" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5cccedd000.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <div class="background">
+            <div class="central-div">
+                <div class="header-border">
+                    <div class="header">
+                        <div id="name">
+                            <a href="index.html" style="text-decoration: none;">
+                                back
+                            </a>
+                        </div>
+                        <div id="links">
+                            <a href="https://github.com/olibridge01" target="_blank">
+                                <i id='github' class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/olibridge01" target="_blank">
+                                <i id='linkedin' class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=lbfdFq4AAAAJ&hl=en" target="_blank">
+                                <i id='scholar' class="fa-brands fa-google-scholar"></i>
+                            </a>
+                            <a href="mailto:olibridge@rocketmail.com" target="_blank">
+                                <i id="email" class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h2>PlaygroundML</h2>
+                        <h3>Playground for Machine Learning in Python - see on <a href="https://github.com/olibridge01/PlaygroundML" target="_blank">GitHub</a></h3>
+                        <p>
+                            One example of models studied in this project are Gaussian Processes (GPs). Below is an animated gif to visualise how the posterior of a GP updates as new data points are observed.
+                            The GP is used to model a noisy sinusoidal function, and the posterior is updated by computing the covariance kernel matrix.
+                            The semi-transparent lines are samples from the GP posterior disrtribution, and the solid line is the mean prediction. 
+                            The shaded area represents a range of one standard deviation from the mean.
+                        </p>                        
+                        <div class="project">
+                            <img class="project-img" src="images/gp.gif">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+    </html>
